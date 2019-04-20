@@ -4,7 +4,7 @@
     <%= article.title%>
 </h1>
 <div>
-    <%= article.body %>
+    <%= article.body %> - <%=link_to "Eliminar",article,method: :delete %>
 </div>
 <hr>
 <%end %>

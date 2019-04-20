@@ -17,12 +17,16 @@ class ArticlesController < ApplicationController
          title:params[:article][:title],
          body:params[:article][:body]
       )
+      
       if @article.save
          redirect_to @article
       else
          render :new
-      end
-         
-     
+      end    
+   end
+   def destroy
+      @article= Article.find(params[:id])
+      @article.destroy
+      redirect_to articles_path
    end
 end

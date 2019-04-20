@@ -2,14 +2,14 @@ Rails.application.routes.draw do
   #get 'welcome/index'
   resources :articles 
   #
-  #  get "/articles"
-  #  post "/articles"
-  #  delet "/articles"
-  #  get "/articles/:id"
-  #  get "articles/:new"
-  #  get "articles/:id/edit"
-  #  path "articles/:id"
-  #  post "/articles/:id"
+  #  get "/articles" index
+  #  post "/articles" create
+  #  delet "/articles" delete
+  #  get "/articles/:id" show
+  #  get "articles/:new" new 
+  #  get "articles/:id/edit" edit
+  #  path "articles/:id" update
+  #  post "/articles/:id" update
   #
 
   root 'welcome#index'
