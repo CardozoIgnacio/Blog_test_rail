@@ -1,0 +1,10 @@
+<h1>Crear articulo</h1>
+<%= form_for (@article) do |f| %>
+    <div class= "field">
+        <%= f.text_field :title, placeholder:"Titulo",class:"form-control" %>
+    </div>
+    <div class="field">
+        <%= f.text_area :body,placeholder:"Escriba aqui su texto", style:"height:250px; width:167px" ,class:"form-control" %>
+    </div>
+
+<% end %>
