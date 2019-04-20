@@ -18,6 +18,6 @@ class ArticlesController < ApplicationController
          body:params[:article][:body]
       )
       @article.save
-      
+      redirect_to @article
    end
 end
