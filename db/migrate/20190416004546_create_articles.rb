@@ -3,7 +3,7 @@ class CreateArticles < ActiveRecord::Migration[5.1]
     create_table :articles do |t|
       t.string :title
       t.text :body
-      t.intiger :visit_count
+      t.integer :visit_count
 
       t.timestamps
     end

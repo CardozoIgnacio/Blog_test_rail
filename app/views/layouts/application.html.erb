@@ -23,11 +23,19 @@
                   <ul class="col-md">
                     <%= link_to "Tecnologia", root_path %>  
                   </ul>
-                  
+                  <ul class="col-md">
+                    <% if user_signed_in?  %>
+                    <ul>
+                    <%= link_to "Cerrar Seccion",destroy_user_session_path,method: :delete %>
+                    </ul>  
+                    <% end %>
+                    
+                  </ul>
               </ul>
           </nav>
       </header>
-
+        <p class="notice"><%= notice%></p>
+        <p class="alert"><%= alert%></p>
     <%= yield %>
 	
   </body>
